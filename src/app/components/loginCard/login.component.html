@@ -1,0 +1,32 @@
+<div class="login-container">
+  <div class="login-card-container">
+    <div class="login-card">
+      <div class="welcome-back-login-card">Welcome back</div>
+      <p style="color: grey;">Welcome back! Please enter your details.</p>
+
+
+      <div class="loginform">
+        <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email" class="form-control"
+              [(ngModel)]="loginData.email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="● ● ● ● ● ●" class="form-control"
+              [(ngModel)]="loginData.password" required />
+          </div>
+
+          <div class="forgot-password">
+            <a href="#" (click)="onForgotPassword()">Forgot Password</a>
+          </div>
+
+          <button type="submit" class="loginbtn">Sign in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="gradient-background"></div>
+</div>

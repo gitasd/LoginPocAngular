@@ -1,0 +1,5 @@
+div {
+    background: linear-gradient(180deg, var(--orange-red) 0%, var(--vivid-pink) 50%, var(--electric-violet) 100%);
+    margin: 0;
+}
+
